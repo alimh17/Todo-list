@@ -1,0 +1,39 @@
+.nav-container {
+  border-bottom: 0.5px solid gray;
+  padding: 1rem 0;
+}
+
+.add-todo-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.add-todo-container svg {
+  font-size: 2rem;
+  color: rgb(107, 54, 207);
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.add-todo-container svg:hover {
+  animation: plus-anim 1s;
+}
+
+@keyframes plus-anim {
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(180deg);
+  }
+}
+
+.date-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
